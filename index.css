@@ -1,0 +1,326 @@
+/* Set the size of the div element that contains the map */
+span {
+  cursor: default;
+}
+a {
+  color: #8eb6ef;
+  text-decoration: none;
+  cursor: pointer;
+}
+a:hover {
+  color: #6ca3f1;
+  text-decoration: none;
+  cursor: pointer;
+}
+#container {
+  margin-top: 10px;
+  width: 100%;
+  height: 800px;
+}
+#container #sidebar {
+  position: relative;
+  float: left;
+  margin-left: 20px;
+  width: 30%;
+  height: 800px;
+  background-color: white;
+  border-radius: 3%;
+}
+#container #sidebar #title {
+  position: relative;
+  margin-top: 5px;
+  width: 100%;
+  height: 100px;
+}
+#container #sidebar #title img {
+  position: absolute;
+  width: auto;
+  height: 100px;
+  left: 50%;
+  margin-left: -92px;
+}
+#container #sidebar #typeBox {
+  position: relative;
+  margin-top: 5px;
+  width: 100%;
+  height: 100px;
+}
+#container #sidebar #typeBox #boxTitle{
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 40px;
+  border-radius: 10px 10px 0 0;
+  background: #72ea72;
+  font-size: 20px;
+  text-align: center;
+  line-height: 40px;
+  color: #fff;
+}
+#container #sidebar #typeBox #houseBox{
+  position: relative;
+  display: block;
+  float: left;
+  width: 50%;
+  height: 60px;
+  background: #8a2b2b;
+  font-size: 30px;
+  text-align: center;
+  line-height: 60px;
+  color: rgb(170, 170, 170);
+}
+
+#container #sidebar #typeBox #houseBox:hover{
+  cursor: pointer;
+}
+
+#container #sidebar #typeBox #schoolBox{
+  position: relative;
+  display: block;
+  float: left;
+  width: 50%;
+  height: 60px;
+  background: #476ca0;
+  font-size: 30px;
+  text-align: center;
+  line-height: 60px;
+  color: rgb(170, 170, 170);
+}
+
+#container #sidebar #typeBox #schoolBox:hover{
+  cursor: pointer;
+}
+
+#container #sidebar #searchBox {
+  height: 300px;
+  width: 100%;
+  background: #fff;
+  position: relative;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+#container #sidebar #searchBox > div {
+  height: 50px;
+  width: 100%;
+}
+
+#container #sidebar #searchBox input {
+  position: absolute;
+  left: 50%;
+  margin-top: 10px;
+  margin-left: -45%;
+  height: 30px;
+  width: 90%;
+  font-size: 25px;
+  text-align:center;
+  border: 0;
+  outline: 0;
+  color: #fff;
+  background: transparent;
+  border:0.033em #fff solid;
+}
+
+#container #sidebar #searchBox #mutableBox {
+  background-color: rgb(228, 153, 165);
+}
+
+#container #sidebar #searchBox #mutableBox .priceInput{
+  position: relative;
+  float: left;
+  margin-left: 4%;
+  left: 0;
+  width: 44%;
+}
+
+#container #sidebar #searchBox #mutableBox .typeInput{
+  display: none;
+  position: relative;
+  float: left;
+  width: 33.33%;
+  height: 50px;
+  font-size: 20px;
+  text-align: center;
+  line-height: 50px;
+  cursor: pointer;
+}
+
+
+#container #sidebar #searchBox #mutableBox::after {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-style: solid;
+  border-width: 0.5em 0.469em 0 0.469em;
+  border-color: rgb(228, 153, 165) transparent transparent transparent;
+  top: 50px;
+  left: 50%;
+  margin-left: -0.496em;
+}
+#container #sidebar #searchBox #timeBox {
+  background-color: #ec7c26;
+}
+#container #sidebar #searchBox #timeBox::after {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-style: solid;
+  border-width: 0.5em 0.469em 0 0.469em;
+  border-color: #ec7c26 transparent transparent transparent;
+  top: 100px;
+  left: 50%;
+  margin-left: -0.496em;
+}
+#container #sidebar #searchBox #distanceBox {
+  background-color: #4daf7c;
+}
+#container #sidebar #searchBox #distanceBox::after {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-style: solid;
+  border-width: 0.5em 0.469em 0 0.469em;
+  border-color: #4daf7c transparent transparent transparent;
+  top: 150px;
+  left: 50%;
+  margin-left: -0.496em;
+}
+#container #sidebar #searchBox #resultNumBox {
+  background-color: #404241;
+}
+#container #sidebar #searchBox #resultNumBox::after {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-style: solid;
+  border-width: 0.5em 0.469em 0 0.469em;
+  border-color: #404241 transparent transparent transparent;
+  top: 200px;
+  left: 50%;
+  margin-left: -0.496em;
+}
+#container #sidebar #searchBox #postcodeBox {
+  background-color: rgb(221, 28, 221);
+}
+#container #sidebar #searchBox #postcodeBox::after {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-style: solid;
+  border-width: 0.5em 0.469em 0 0.469em;
+  border-color: rgb(221, 28, 221) transparent transparent transparent;
+  top: 250px;
+  left: 50%;
+  margin-left: -0.496em;
+}
+#container #sidebar #searchBox #submitBox {
+  background-color: #f1c280;
+}
+
+#container #sidebar #searchBox #submitBox span {
+  display: block;
+  padding-top: 5px;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  font-size:30px;
+  cursor: pointer;
+}
+
+::placeholder {
+  color: #fff;
+}
+
+::-moz-placeholder {
+  color: #fff;
+}
+
+:-ms-input-placeholder {
+  color: #fff;
+}
+
+::-webkit-input-placeholder {
+  color: #fff;
+}
+
+#container #map {
+  position: relative;
+  float: left;
+  margin-left: 50px;
+  height: 800px;
+  width: 60%;
+}
+
+#container #sidebar #infoArea {
+  width: 100%;
+  height: 290px;
+  border-radius: 0 0 3% 3%;
+  overflow: auto;
+}
+
+#container #sidebar #infoArea p{
+  display: block;
+  position: absolute;
+  left: 50%;
+  margin-left: -45%;
+  width: 90%;
+  height: 270px;
+  font-size: 11px;
+  overflow: auto;
+}
+
+#container #sidebar #infoArea #infoView {
+  text-align: center;
+}
+
+#container #sidebar #infoArea h1 {
+  display: block;
+  font-weight: bold;
+  width: auto;
+  height: 20px;
+  line-height: 20px;
+}
+
+#container #sidebar #infoArea a {
+  display: block;
+  margin-top: 5px;
+  font-weight: bold;
+  width: auto;
+  height: 10px;
+}
+
+#container #sidebar #infoArea button {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  width: 100%;
+  height: 20px;
+  cursor: pointer;
+  border: none;
+  background-color: #bed3f0;
+  color: #fff;
+  border-radius: 10px;
+}
+
+#container #sidebar #infoArea ul {
+  background-color: #fff;
+}
+
+#container #sidebar #infoArea ul li{
+  padding-left: 10px;
+  padding-bottom: 5px;
+  display: block;
+  border-style: solid;
+  border-width: 0 0 1px 0;
+  cursor: pointer;
+}
+
+#container #sidebar #infoArea ul li:nth-child(n+2){
+  margin-top: 5px;
+}
+

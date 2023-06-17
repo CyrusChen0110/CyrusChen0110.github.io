@@ -1,2 +1,60 @@
-# CyrusChen0110.github.io
-Welcome to programmer YuxuanChen's home page
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://maps.googleapis.com/maps/api/js?libraries=geometry&key=AIzaSyD0RLoLRRrWOEVteHj3CRuFEAWnD-cpxJc&language=en"></script>
+    <title>Map App</title>
+</head>
+<body>
+    <div id="container">
+        <div id="sidebar">
+            <div id="title">
+                <img id="logo" src="" alt=""/>
+            </div>
+            <div id="typeBox">
+                <span id="boxTitle">Choose the type</span>
+                <span id="houseBox">House</span>
+                <span id="schoolBox">School</span>
+            </div>
+            <div id="searchBox">
+                <div id="mutableBox">
+                    <input type="text" class="priceInput" id="priceLow" placeholder="Lowest Price(£)">
+                    <input type="text" class="priceInput" id="priceHigh" placeholder="Highest Price(£)" >
+                    <span class="typeInput" id="primary">Primary</span>
+                    <span class="typeInput" id="secondary">Secondary</span>
+                    <span class="typeInput" id="other">Other</span>
+                </div>
+                <div id="timeBox">
+                    <input type="text" id="duration" placeholder="Max Driving Time(min)"/>
+                </div>
+                <div id="distanceBox">
+                    <input type="text" id="distance" placeholder="Max Driving Distance(km)"/>
+                </div>
+                <div id="resultNumBox">
+                    <input type="text" id="searchNum" placeholder="Number of results(up to 20)"/>
+                </div>
+                <div id="postcodeBox">
+                    <input id="addressInput" type="text" placeholder="Please input the address"/>
+                </div>
+                <div id="submitBox">
+                    <span>Search</span>
+                </div>
+            </div>
+            <div id = "infoArea">
+                <p id ="infoNotice">
+                    Notice:<br/>
+                    (1) You must input the address part in correct format (Building name, Street name, Postcode etc.) <br/>
+                    (2) You can add the driving time and distance constraints or not.<br/>
+                    (3) You can set the maximum number of searching results. The default number is 10. <br/>
+                    (4) If you search houses, you can add constraints on the range of price or not.<br/>
+                    (5) If you search schools, you must choose at least one type of school to search.<br/>
+                    (6) Searching results will be shown in this place, you can click each item or the marker in the map to view details.<br/>
+                </p>
+            </div>
+        </div>
+        <div id="map"></div>
+    </div>
+</body>
+</html>
